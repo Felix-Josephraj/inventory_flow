@@ -76,9 +76,9 @@ const ProductModal: React.FC<ProductModalProps> = ({ isOpen, onClose, initialDat
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-500 bg-opacity-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-gray-500/50" role='dialog'>
       <div className="bg-white p-6 rounded-lg w-1/3">
-        <h2 className="text-xl font-bold mb-4 text-gray-600">{initialData ? 'Edit Product' : 'Add Product'}</h2>
+        <h2 className="text-xl font-bold mb-4 text-gray-600">{initialData ? 'Edit Product' : 'Add Product modal'}</h2>
 
         <div>
           <label className="block text-sm font-medium text-gray-700">Product Name</label>

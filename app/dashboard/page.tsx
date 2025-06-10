@@ -25,6 +25,11 @@ const DashboardPage = () => {
     setModalOpen(true);
   };
 
+  const returnReverse = (arr : Array<string>) : Array<string>=>{
+  return arr.reverse()
+  }
+   
+
   const handleDelete = (id: string) => {
     setSelectedProductIds([id]);
     setIsBatchDelete(false);
